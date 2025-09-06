@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import GallerySection from "@/components/GallerySection";
+import AboutSection from "@/components/AboutSection";
 
 const page = () => {
   return (
@@ -9,6 +10,7 @@ const page = () => {
         <Header></Header>
         <Hero></Hero>
         <GallerySection></GallerySection>
+        <AboutSection></AboutSection>
       </div>
     </div>
   );

@@ -126,10 +126,9 @@ function GallerySection() {
       </div>
 
       <div className="flex flex-1 items-center justify-center max-w-[500px] m-auto">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem,
-        quam facere. Expedita quasi ipsum earum ducimus voluptates laborum,
-        temporibus fugit modi pariatur accusamus illum rem nostrum debitis
-        aliquam qui deleniti.
+        Our goal is to support dancers and teachers in reaching their goals, in
+        a healthy and safe way. You get access to the newest training techniques
+        and methods, with new classes added every month
       </div>
     </div>
   );

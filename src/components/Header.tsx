@@ -1,5 +1,5 @@
 "use client";
-import { hover, motion, Variants } from "motion/react";
+import { motion, Variants } from "motion/react";
 import Image from "next/image";
 import Link from "next/link";
 import { MoveUpRight } from "lucide-react";
@@ -80,7 +80,7 @@ const Header = () => {
 
   return (
     <header className="min-h-16 h-[10vh] flex justify-between items-center">
-      <div className="">
+      <Link href={"/"}>
         <Image
           className=""
           src="/haha_logo.png"
@@ -88,13 +88,18 @@ const Header = () => {
           width={50}
           height={100}
         />
-      </div>
+      </Link>
 
-      <nav>
-        <ul className="md:flex hidden md:gap-5 text-[13px] md:text-[15px]">
+      <nav className="ml-[5%]">
+        <ul className="md:flex hidden md:gap-6 text-[13px] md:text-[15px]">
           {navLinks.map((item: { title: string; href: string }, i: number) => (
             <li key={i}>
-              <Link href={item.href}>{item.title}</Link>
+              <Link
+                className="hover:font-black relative after:absolute after:w-0 after:h-[1px] after:bg-yellow-500  hover:after:w-full after:left-0 after:top-[120%] after:transition-all after:duration-300 cursor-pointer"
+                href={item.href}
+              >
+                {item.title}
+              </Link>
             </li>
           ))}
         </ul>
@@ -245,8 +250,8 @@ const RightArrow = () => {
     >
       <path
         d="M4 12H20M20 12L14 6M20 12L14 18"
-        stroke="currentColor"
-        stroke-width="0.7"
+        stroke="black"
+        stroke-width="0.8"
         stroke-linecap="round"
         stroke-linejoin="round"
       />
