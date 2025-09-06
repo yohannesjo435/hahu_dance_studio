@@ -91,11 +91,11 @@ const Header = () => {
       </Link>
 
       <nav className="ml-[5%]">
-        <ul className="md:flex hidden md:gap-6 text-[13px] md:text-[15px]">
+        <ul className="md:flex hidden md:gap-7 text-[13px] md:text-[15px]">
           {navLinks.map((item: { title: string; href: string }, i: number) => (
             <li key={i}>
               <Link
-                className="hover:font-black relative after:absolute after:w-0 after:h-[1px] after:bg-yellow-500  hover:after:w-full after:left-0 after:top-[120%] after:transition-all after:duration-300 cursor-pointer"
+                className="hover:font-[600] relative after:absolute after:w-0 after:h-[1px] after:bg-yellow-500  hover:after:w-full after:left-0 after:top-[120%] after:transition-all after:duration-300 cursor-pointer tracking-widest"
                 href={item.href}
               >
                 {item.title}
@@ -251,9 +251,9 @@ const RightArrow = () => {
       <path
         d="M4 12H20M20 12L14 6M20 12L14 18"
         stroke="black"
-        stroke-width="0.8"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="0.8"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </svg>
   );

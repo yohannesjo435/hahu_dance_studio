@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const AboutSection = () => {
   return (
-    <div className=" md:w-[80%] mx-auto flex gap-3.5 flex-col md:flex-row-reverse md:gap-14  md:h-96 h-[530px] mt-48">
+    <div className=" md:w-[90%] mx-auto flex gap-3.5 flex-col md:flex-row-reverse md:gap-14  md:h-96 h-[530px] mt-40">
       <div className="relative flex-1 w-full">
         <Image
           src={"/instructors/hawi.jpg"}
@@ -13,7 +13,7 @@ const AboutSection = () => {
         />
       </div>
 
-      <div className="flex flex-1 items-center justify-center">
+      <div className="flex flex-1 items-center justify-center text-[18px] leading-8 [word-spacing:5px]">
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis
         molestiae, minus aliquam eaque, iste necessitatibus commodi facilis illo
         neque cupiditate quaerat quas impedit. Blanditiis culpa amet, dolorum

@@ -9,7 +9,7 @@ import "swiper/css/effect-cards";
 
 function GallerySection() {
   return (
-    <div className="flex items-center justify-center flex-col lg:flex-row w-[59%] md:w-[85%] gap-10 lg:gap-[5%] m-auto mt-52">
+    <div className="flex items-center justify-center flex-col lg:flex-row w-[59%] md:w-[85%] gap-10 lg:gap-[5%] m-auto mt-40">
       <div className="flex-1 w-full">
         <Swiper
           effect={"cards"}
@@ -125,7 +125,7 @@ function GallerySection() {
         </Swiper>
       </div>
 
-      <div className="flex flex-1 items-center justify-center max-w-[500px] m-auto">
+      <div className="flex flex-1 items-center justify-center max-w-[500px] m-auto text-[18px] leading-8 [word-spacing:5px]">
         Our goal is to support dancers and teachers in reaching their goals, in
         a healthy and safe way. You get access to the newest training techniques
         and methods, with new classes added every month
