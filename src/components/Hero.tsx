@@ -10,18 +10,12 @@ import "swiper/css/pagination";
 
 const Hero = () => {
   return (
-    <main className="mx-[2%] mt-5 flex flex-col lg:flex-row lg:justify-around items-center">
-      <div className="min-w-[200px] h-[88vh]">
-        <Image
-          className="w-full h-full "
-          src={"/banner-2.jpg"}
-          alt="hawi dancing, hawi is the founder of hahu dance and expert in his feild"
-          width={"450"}
-          height={"300"}
-        />
-      </div>
-      <div className=" flex-1 max-w-[50vw] min-w-[450px] flex flex-col gap-6">
-        <h1 className="text-7xl">Hahu Dance. Dance with Passion</h1>
+    <main className="flex md-max-h-[1000px] flex-col items-center gap-[5%] md:flex-row lg:justify-around mt-7">
+      <div className="flex-1 w-full min-h-[500px] max-h-[1000px] md:h-[85vh] bg-[url('/banner-2.jpg')] bg-cover bg-no-repeat bg-bottom"></div>
+      <div className="h-max flex-1 max-w-[50vw] min-w-[450px] flex flex-col gap-4">
+        <h1 className="text-3xl md:text-7xl text-wrap">
+          Hahu Dance. Dance with Passion
+        </h1>
         <p>
           Ignite your passion for dance and experience the transformative power
           of movement at our thriving academy.
@@ -39,7 +33,7 @@ export default Hero;
 
 export const SliderInstructor = () => {
   return (
-    <div className="w-full">
+    <div className="w-full overflow-hidden">
       <h2 className="mb-3">Instructors</h2>
       <Swiper
         slidesPerView={4.3}
