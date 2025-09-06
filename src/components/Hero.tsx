@@ -10,9 +10,10 @@ import "swiper/css/pagination";
 
 const Hero = () => {
   return (
-    <main className="flex md-max-h-[1000px] flex-col items-center gap-[5%] md:flex-row lg:justify-around mt-7">
+    <main className="flex md:max-h-[1000px] flex-col items-center gap-[50px] md:gap-[5%] md:flex-row lg:justify-around mt-7">
       <div className="flex-1 w-full min-h-[500px] max-h-[1000px] md:h-[85vh] bg-[url('/banner-2.jpg')] bg-cover bg-no-repeat bg-bottom"></div>
-      <div className="h-max flex-1 max-w-[50vw] min-w-[450px] flex flex-col gap-4">
+
+      <div className="h-max flex-1 w-full flex flex-col gap-4">
         <h1 className="text-3xl md:text-7xl text-wrap">
           Hahu Dance. Dance with Passion
         </h1>
@@ -23,7 +24,9 @@ const Hero = () => {
         <button className="btn btn-neutral w-max">
           Watch video <Play />
         </button>
-        <SliderInstructor />
+        <div className="max-w-[650px]">
+          <SliderInstructor />
+        </div>
       </div>
     </main>
   );
@@ -33,7 +36,7 @@ export default Hero;
 
 export const SliderInstructor = () => {
   return (
-    <div className="w-full overflow-hidden">
+    <div className="w-full">
       <h2 className="mb-3">Instructors</h2>
       <Swiper
         slidesPerView={4.3}
@@ -53,7 +56,7 @@ export const SliderInstructor = () => {
             width={200}
             height={200}
           />
-          <h2 className="absolute bottom-6 left-1.5 text-amber-50 text-[15px] font-bold">
+          <h2 className="absolute bottom-6 left-1.5 text-amber-50  text-[15px] font-bold">
             Hawi
           </h2>
           <h2 className="absolute bottom-1 left-1.5 text-amber-50 text-[13px]">

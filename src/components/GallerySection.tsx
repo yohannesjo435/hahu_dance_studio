@@ -9,7 +9,7 @@ import "swiper/css/effect-cards";
 
 function GallerySection() {
   return (
-    <div className="flex items-center justify-center flex-col lg:flex-row outline-1 w-[59%] md:w-[85%] gap-10 lg:gap-[5%] m-auto mt-52">
+    <div className="flex items-center justify-center flex-col lg:flex-row w-[59%] md:w-[85%] gap-10 lg:gap-[5%] m-auto mt-52">
       <div className="flex-1 w-full">
         <Swiper
           effect={"cards"}
