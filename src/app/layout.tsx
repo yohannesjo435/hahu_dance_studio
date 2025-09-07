@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Fredoka, PT_Sans } from "next/font/google";
 import "./globals.css";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 const fredoka = Fredoka({
   subsets: ["latin"],
@@ -21,7 +23,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" data-theme="light">
-      <body className={`${ptSans.className} antialiased`}>{children}</body>
+      <body className={`${ptSans.className} antialiased`}>
+        <Header />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }

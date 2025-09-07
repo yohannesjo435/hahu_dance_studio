@@ -5,6 +5,7 @@ import Link from "next/link";
 import { MoveUpRight } from "lucide-react";
 import { Dispatch, SetStateAction, useState } from "react";
 import { useEffect } from "react";
+import { useParams } from "next/navigation";
 
 const varaints = {
   open: {
@@ -51,6 +52,8 @@ const Header = () => {
   const [menuIsActive, setMenuActive] = useState<boolean>(false);
   const [showMenuOnScroll, setShowMenuOnScroll] = useState(false);
 
+  const params = useParams();
+  console.log("Params: ", params);
   useEffect(() => {
     const storedTheme = localStorage.getItem("theme");
     if (storedTheme) {
@@ -71,7 +74,6 @@ const Header = () => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollY = window.scrollY;
-      console.log("scroll y: ", scrollY);
       setShowMenuOnScroll(scrollY > 50);
     };
     window.addEventListener("scroll", handleScroll);
@@ -79,7 +81,7 @@ const Header = () => {
   }, []);
 
   return (
-    <header className="min-h-16 h-[10vh] flex justify-between items-center">
+    <header className="max-w-[1500px] px-[2%] lg:px-[5%] m-auto min-h-16 h-[10vh] flex justify-between items-center">
       <Link href={"/"}>
         <Image
           className=""
@@ -235,7 +237,7 @@ const navLinks = [
   },
   {
     title: "Contact",
-    href: "/",
+    href: "/contact",
   },
 ];
 
