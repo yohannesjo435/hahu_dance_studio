@@ -6,23 +6,29 @@ import Company from "@/components/Company";
 import Faq from "@/components/Faq";
 import { ArrowUp } from "lucide-react";
 import Link from "next/link";
+import Drawer from "@/components/Drawer";
+import Footer from "@/components/Footer";
 
 const page = () => {
   return (
-    <div id="main" className="mb-36 max-w-[1500px] m-auto">
+    <div id="main" className="max-w-[1500px] m-auto relative">
       <div className="mx-[2%] lg:mx-[5%]">
-        <Header></Header>
-        <Hero></Hero>
-        <Company></Company>
-        <AboutSection></AboutSection>
-        <GallerySection></GallerySection>
-        <Faq></Faq>
+        <Header />
+        <Hero />
+        <Company />
+        <div className="fixed top-1/2 left-0 z-50">
+          <Drawer />
+        </div>
+        <AboutSection />
+        <GallerySection />
+        <Faq />
       </div>
       <div className="fab">
         <Link href="#main" className="btn btn-lg btn-circle ">
           <ArrowUp />
         </Link>
       </div>
+      <Footer />
     </div>
   );
 };
