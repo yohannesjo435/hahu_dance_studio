@@ -4,3 +4,6 @@
   /* themes: [ "light", "abyss"]; */
   themes: all;
 }
+:root {
+  scroll-behavior: smooth;
+}
