@@ -50,10 +50,9 @@ const textHoverVariants: Variants = {
 const Header = () => {
   const [theme, setTheme] = useState("light");
   const [menuIsActive, setMenuActive] = useState<boolean>(false);
-  const [showMenuOnScroll, setShowMenuOnScroll] = useState(false);
+  const [showMenuOnScroll, setShowMenuOnScroll] = useState<boolean>(false);
 
   const params = useParams();
-  console.log("Params: ", params);
   useEffect(() => {
     const storedTheme = localStorage.getItem("theme");
     if (storedTheme) {
@@ -229,7 +228,7 @@ const navLinks = [
   },
   {
     title: "Gallery",
-    href: "/",
+    href: "/gallery",
   },
   {
     title: "About us",

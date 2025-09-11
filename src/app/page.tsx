@@ -6,6 +6,11 @@ import Faq from "@/components/Faq";
 import { ArrowUp } from "lucide-react";
 import Link from "next/link";
 import Drawer from "@/components/Drawer";
+import gsap from "gsap";
+import { SplitText } from "gsap/all";
+import { ScrollTrigger } from "gsap/all";
+
+gsap.registerPlugin(SplitText, ScrollTrigger);
 
 const page = () => {
   return (

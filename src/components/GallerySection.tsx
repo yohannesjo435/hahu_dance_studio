@@ -24,6 +24,7 @@ function GallerySection() {
             <Image
               className="rounded-[7px] object-bottom"
               src={"/instructors/hawi.jpg"}
+              sizes={100}
               alt="hawi dancing, hawi is the founder of hahu dance and expert in his feild"
               fill
               style={{
