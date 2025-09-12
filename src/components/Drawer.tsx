@@ -1,15 +1,17 @@
 import React from "react";
-import { SquareChevronRight } from "lucide-react";
 
 const Drawer = () => {
   return (
-    <div className="z-">
+    <div>
       <div className="drawer">
         <input id="my-drawer" type="checkbox" className="drawer-toggle" />
         <div className="drawer-content">
           {/* Page content here */}
-          <label htmlFor="my-drawer" className="outline-1 drawer-button">
-            <SquareChevronRight />
+          <label
+            htmlFor="my-drawer"
+            className="outline-1 drawer-button btn rotate-90 -ml-7 text-[12px]"
+          >
+            Contact Us
           </label>
         </div>
         <div className="drawer-side ">
