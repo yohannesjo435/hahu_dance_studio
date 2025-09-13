@@ -22,7 +22,7 @@ export default function RootLayout({
       <body className={`${ptSans.className} antialiased`}>
         <Header />
         {children}
-        {/* <Footer /> */}
+        <Footer />
       </body>
     </html>
   );

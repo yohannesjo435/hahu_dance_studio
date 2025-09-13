@@ -47,7 +47,7 @@ const textHoverVariants: Variants = {
 };
 
 const Header = () => {
-  const [theme, setTheme] = useState("light");
+  const [theme, setTheme] = useState("silk");
   const [menuIsActive, setMenuActive] = useState<boolean>(false);
   const [showMenuOnScroll, setShowMenuOnScroll] = useState<boolean>(false);
 
@@ -59,7 +59,7 @@ const Header = () => {
   }, []);
 
   const toggleTheme = () => {
-    const newTheme = theme === "abyss" ? "light" : "abyss";
+    const newTheme = theme === "abyss" ? "silk" : "abyss";
     setTheme(newTheme);
     localStorage.setItem("theme", newTheme);
   };
