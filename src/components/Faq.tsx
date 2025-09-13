@@ -2,7 +2,7 @@ import React from "react";
 
 const Faq = () => {
   return (
-    <div className="w-[80%] m-auto my-32">
+    <section id="faq" className="w-[80%] m-auto my-32">
       <h2 className="text-3xl py-8 pl-1">Freqently asked Questions. </h2>
 
       {accordion.map((item, i) => (
@@ -16,7 +16,7 @@ const Faq = () => {
           <div className="collapse-content text-sm">{item.text}</div>
         </div>
       ))}
-    </div>
+    </section>
   );
 };
 

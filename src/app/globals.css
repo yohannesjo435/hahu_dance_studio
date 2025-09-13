@@ -7,3 +7,15 @@
 :root {
   scroll-behavior: smooth;
 }
+* {
+  box-sizing: border-box;
+}
+.split {
+  opacity: 0;
+  /* font-size: clamp(2rem, 5rem, 3vw); */
+  will-change: transform;
+}
+
+.split * {
+  will-change: transform;
+}

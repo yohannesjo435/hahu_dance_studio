@@ -5,7 +5,6 @@ import Link from "next/link";
 import { MoveUpRight } from "lucide-react";
 import { Dispatch, SetStateAction, useState } from "react";
 import { useEffect } from "react";
-import { useParams } from "next/navigation";
 
 const varaints = {
   open: {
@@ -48,12 +47,10 @@ const textHoverVariants: Variants = {
 };
 
 const Header = () => {
-  const [theme, setTheme] = useState("light");
+  const [theme, setTheme] = useState("silk");
   const [menuIsActive, setMenuActive] = useState<boolean>(false);
-  const [showMenuOnScroll, setShowMenuOnScroll] = useState(false);
+  const [showMenuOnScroll, setShowMenuOnScroll] = useState<boolean>(false);
 
-  const params = useParams();
-  console.log("Params: ", params);
   useEffect(() => {
     const storedTheme = localStorage.getItem("theme");
     if (storedTheme) {
@@ -62,7 +59,7 @@ const Header = () => {
   }, []);
 
   const toggleTheme = () => {
-    const newTheme = theme === "abyss" ? "light" : "abyss";
+    const newTheme = theme === "abyss" ? "silk" : "abyss";
     setTheme(newTheme);
     localStorage.setItem("theme", newTheme);
   };
@@ -229,15 +226,15 @@ const navLinks = [
   },
   {
     title: "Gallery",
-    href: "/",
+    href: "/gallery",
   },
   {
     title: "About us",
-    href: "/",
+    href: "#aboutSection",
   },
   {
     title: "Contact",
-    href: "/contact",
+    href: "#footer",
   },
 ];
 

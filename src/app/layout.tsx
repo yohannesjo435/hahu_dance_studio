@@ -1,13 +1,9 @@
 import type { Metadata } from "next";
-import { Fredoka, PT_Sans } from "next/font/google";
+import { PT_Sans } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
-const fredoka = Fredoka({
-  subsets: ["latin"],
-  weight: ["400"],
-});
 const ptSans = PT_Sans({
   weight: ["400"],
 });
