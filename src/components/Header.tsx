@@ -5,7 +5,6 @@ import Link from "next/link";
 import { MoveUpRight } from "lucide-react";
 import { Dispatch, SetStateAction, useState } from "react";
 import { useEffect } from "react";
-import { useParams } from "next/navigation";
 
 const varaints = {
   open: {
@@ -52,7 +51,6 @@ const Header = () => {
   const [menuIsActive, setMenuActive] = useState<boolean>(false);
   const [showMenuOnScroll, setShowMenuOnScroll] = useState<boolean>(false);
 
-  const params = useParams();
   useEffect(() => {
     const storedTheme = localStorage.getItem("theme");
     if (storedTheme) {
@@ -232,11 +230,11 @@ const navLinks = [
   },
   {
     title: "About us",
-    href: "/",
+    href: "#aboutSection",
   },
   {
     title: "Contact",
-    href: "/contact",
+    href: "#footer",
   },
 ];
 
