@@ -1,5 +1,10 @@
 export const images = [
   {
+    img: "images/img.jpeg",
+    height: 400,
+    alt: "concert photo people dancing",
+  },
+  {
     img: "images/img1.jpg",
     height: 400,
     alt: "concert photo people dancing",

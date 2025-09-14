@@ -82,7 +82,7 @@ const Header = () => {
       <Link href={"/"}>
         <Image
           loading="lazy"
-          src="/hahu_logo.png"
+          src="/images/hahu_logo.png"
           alt="hahu logo"
           width={50}
           height={100}
