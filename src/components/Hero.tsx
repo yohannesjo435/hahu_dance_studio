@@ -60,11 +60,11 @@ const Hero = () => {
 
           <div className="titles h-max flex-1 w-full flex flex-col gap-4">
             <h1 className=" text-3xl md:text-7xl overflow-hidden">
-              Hahu Dance. Dance with Passion
+              Hahu Dance. Body speak art Talk
             </h1>
             <p>
               Ignite your passion for dance and experience the transformative
-              power of movement at our thriving academy.
+              power of movement with our thriving dancers.
             </p>
             <Link href={"#videoSection"} className="btn btn-neutral w-max">
               Watch video <Play />
@@ -92,11 +92,8 @@ export const SliderInstructor = () => {
         modules={[FreeMode]}
         className="mySwiper"
       >
-        {images.map(({ img, alt }, index) => (
+        {images.map(({ img, alt, name }, index) => (
           <SwiperSlide key={index} className="shadow-xl h-[200px]">
-            <h2 className="absolute top-0.5 left-1.5 text-amber-50 text-[12px]">
-              HIP-HOP
-            </h2>
             <Image
               className="rounded-[7px]"
               src={`/${img}`}
@@ -106,10 +103,10 @@ export const SliderInstructor = () => {
               loading="lazy"
             />
             <h2 className="absolute bottom-6 left-1.5 text-amber-50 text-[15px] font-bold">
-              Hawi
+              {name}
             </h2>
             <h2 className="absolute bottom-1 left-1.5 text-amber-50 text-[13px]">
-              Founder Instructor
+              Dance
             </h2>
           </SwiperSlide>
         ))}
@@ -120,27 +117,28 @@ export const SliderInstructor = () => {
 
 export const images = [
   {
-    img: "images/hip-pop.jpg",
+    img: "dance_genre/hip-pop.jpg",
     alt: "concert photo people dancing",
+    name: "Hip pop",
   },
   {
-    img: "images/img (64).jpg",
+    img: "dance_genre/locking.webp",
     alt: "concert photo people dancing",
+    name: "locking",
   },
   {
-    img: "images/img (9).jpg",
+    img: "dance_genre/popping.png",
     alt: "concert photo people dancing",
+    name: "popping",
   },
   {
-    img: "images/img (10).jpg",
+    img: "dance_genre/Chifera.jpg",
     alt: "concert photo people dancing",
+    name: "Chifera",
   },
   {
-    img: "images/img (11).jpg",
+    img: "dance_genre/TheCrampsLogo.jpg",
     alt: "concert photo people dancing",
-  },
-  {
-    img: "images/img (12).jpg",
-    alt: "concert photo people dancing",
+    name: "Cramps",
   },
 ];
