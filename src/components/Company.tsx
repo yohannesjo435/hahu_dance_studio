@@ -23,7 +23,7 @@ export default Company;
 
 const images = [
   {
-    src: "/company/aau-logo.jpg",
+    src: "/company/aau-logo.png",
     alt: "image",
   },
   {
@@ -32,7 +32,7 @@ const images = [
   },
 
   {
-    src: "/company/ethio-telecome-logo.png",
+    src: "/company/ethio-airlines.png",
     alt: "image",
   },
 ];
