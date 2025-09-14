@@ -82,7 +82,7 @@ const Header = () => {
       <Link href={"/"}>
         <Image
           className=""
-          src="/haha_logo.png"
+          src="/hahu_logo.png"
           alt="hahu logo"
           width={50}
           height={100}
@@ -110,9 +110,9 @@ const Header = () => {
           onChange={toggleTheme}
           className="toggle border-indigo-600 bg-white checked:border-white border-2 checked:bg-black checked:text-w-800"
         />
-        <button className="btn btn-neutral">
+        <Link href={"/contact"} className="btn btn-neutral">
           Contact us <MoveUpRight />
-        </button>
+        </Link>
         {showMenuOnScroll && (
           <motion.div
             className="fixed z-10 right-5 top-10"
@@ -230,11 +230,11 @@ const navLinks = [
   },
   {
     title: "About us",
-    href: "#aboutSection",
+    href: "/#aboutSection",
   },
   {
     title: "Contact",
-    href: "#footer",
+    href: "/contact",
   },
 ];
 

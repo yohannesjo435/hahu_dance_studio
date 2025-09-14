@@ -1,4 +1,4 @@
-import React from "react";
+import { X } from "lucide-react";
 
 const Drawer = () => {
   return (
@@ -21,7 +21,15 @@ const Drawer = () => {
             className="drawer-overlay"
           ></label>
           <ul className="menu bg-base-200 text-base-content min-h-full w-80 p-4">
-            <h2 className="text-3xl my-5">Get in touch</h2>
+            <div className="flex items-center justify-between">
+              <h2 className="text-3xl my-5">Get in touch</h2>
+              <label
+                htmlFor="my-drawer"
+                className="drawer-button text-[14px] cursor-pointer"
+              >
+                <X />
+              </label>
+            </div>
             <hr />
             <p className="mb-5 mt-2.5">
               Ready to transform your vision into a digital masterpiece? Were

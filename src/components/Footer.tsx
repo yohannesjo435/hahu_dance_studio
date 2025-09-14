@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="mt-20 p-5 h-[150vh] md:h-[90vh] gap-5 flex-1 flex flex-col">
+    <footer className="max-w-[1500px] m-auto max-h-[500px] mt-20 p-5 h-[150vh] md:h-[90vh] gap-5 flex-1 flex flex-col">
       <div className="w-full flex flex-col md:flex-row lg:px-7 lg:pl-3 justify-between items-center">
         <h1 className="text-9xl md:text-[200px] font-bold">MORE</h1>
         <ul className="text-[20px] grid gap-2">
@@ -19,7 +19,11 @@ const Footer = () => {
           <nav className="flex flex-col gap-3">
             <hr className="w-44 md:w-24 lg:w-44 mb-5" />
             {navLinks.map(({ title, href }) => (
-              <Link key={title} href={href}>
+              <Link
+                key={title}
+                href={href}
+                className="hover:font-bold hover:ease-in-out"
+              >
                 {title}
               </Link>
             ))}
@@ -35,7 +39,7 @@ const Footer = () => {
         </div>
 
         <Link
-          href={"#aboutSection"}
+          href={"/#aboutSection"}
           className="p-3 flex flex-1 justify-between rounded-lg text-black bg-white font-mono text-3xl lg:text-[50px] outline-1"
         >
           <h1>AboutUs</h1>
@@ -97,14 +101,14 @@ const navLinks = [
   },
   {
     title: "Gallery",
-    href: "/",
+    href: "/gallery",
   },
   {
     title: "About us",
-    href: "/",
+    href: "/#aboutSection",
   },
   {
     title: "Contact",
-    href: "/",
+    href: "/contact",
   },
 ];

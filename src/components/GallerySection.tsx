@@ -17,111 +17,29 @@ function GallerySection() {
           modules={[EffectCards]}
           className="mySwiper max-w-[430px] h-[370px]"
         >
-          <SwiperSlide>
-            <h2 className="absolute top-0.5 left-1.5 text-amber-50 text-[12px]">
-              HIP-HOP
-            </h2>
-            <Image
-              className="rounded-[7px] object-bottom"
-              src={"/instructors/hawi.jpg"}
-              alt="hawi dancing, hawi is the founder of hahu dance and expert in his feild"
-              fill
-              style={{
-                objectFit: "cover",
-                objectPosition: "center",
-              }}
-            />
-            <h2 className="absolute bottom-6 left-1.5 text-amber-50 text-[15px] font-bold">
-              Hawi
-            </h2>
-            <h2 className="absolute bottom-1 left-1.5 text-amber-50 text-[13px]">
-              Founder Instructor
-            </h2>
-          </SwiperSlide>
-          <SwiperSlide>
-            <h2 className="absolute top-0.5 left-1.5 text-amber-50 text-[12px]">
-              HIP-HOP
-            </h2>
-            <Image
-              className="rounded-[7px] object-bottom"
-              src={"/instructors/hawi.jpg"}
-              alt="hawi dancing, hawi is the founder of hahu dance and expert in his feild"
-              fill
-              style={{
-                objectFit: "cover",
-                objectPosition: "center",
-              }}
-            />
-            <h2 className="absolute bottom-6 left-1.5 text-amber-50 text-[15px] font-bold">
-              Hawi
-            </h2>
-            <h2 className="absolute bottom-1 left-1.5 text-amber-50 text-[13px]">
-              Founder Instructor
-            </h2>
-          </SwiperSlide>
-          <SwiperSlide>
-            <h2 className="absolute top-0.5 left-1.5 text-amber-50 text-[12px]">
-              HIP-HOP
-            </h2>
-            <Image
-              className="rounded-[7px] object-bottom"
-              src={"/instructors/hawi.jpg"}
-              alt="hawi dancing, hawi is the founder of hahu dance and expert in his feild"
-              fill
-              style={{
-                objectFit: "cover",
-                objectPosition: "center",
-              }}
-            />
-            <h2 className="absolute bottom-6 left-1.5 text-amber-50 text-[15px] font-bold">
-              Hawi
-            </h2>
-            <h2 className="absolute bottom-1 left-1.5 text-amber-50 text-[13px]">
-              Founder Instructor
-            </h2>
-          </SwiperSlide>
-          <SwiperSlide>
-            <h2 className="absolute top-0.5 left-1.5 text-amber-50 text-[12px]">
-              HIP-HOP
-            </h2>
-            <Image
-              className="rounded-[7px] object-bottom"
-              src={"/instructors/hawi.jpg"}
-              alt="hawi dancing, hawi is the founder of hahu dance and expert in his feild"
-              fill
-              style={{
-                objectFit: "cover",
-                objectPosition: "center",
-              }}
-            />
-            <h2 className="absolute bottom-6 left-1.5 text-amber-50 text-[15px] font-bold">
-              Hawi
-            </h2>
-            <h2 className="absolute bottom-1 left-1.5 text-amber-50 text-[13px]">
-              Founder Instructor
-            </h2>
-          </SwiperSlide>
-          <SwiperSlide>
-            <h2 className="absolute top-0.5 left-1.5 text-amber-50 text-[12px]">
-              HIP-HOP
-            </h2>
-            <Image
-              className="rounded-[7px] object-bottom"
-              src={"/instructors/hawi.jpg"}
-              alt="hawi dancing, hawi is the founder of hahu dance and expert in his feild"
-              fill
-              style={{
-                objectFit: "cover",
-                objectPosition: "center",
-              }}
-            />
-            <h2 className="absolute bottom-6 left-1.5 text-amber-50 text-[15px] font-bold">
-              Hawi
-            </h2>
-            <h2 className="absolute bottom-1 left-1.5 text-amber-50 text-[13px]">
-              Founder Instructor
-            </h2>
-          </SwiperSlide>
+          {images.map(({ img, alt }, index) => (
+            <SwiperSlide key={index}>
+              <h2 className="absolute top-0.5 left-1.5 text-amber-50 text-[12px]">
+                HIP-HOP
+              </h2>
+              <Image
+                className="rounded-[7px] object-bottom"
+                src={`/${img}`}
+                alt={alt}
+                fill
+                style={{
+                  objectFit: "cover",
+                  objectPosition: "center",
+                }}
+              />
+              <h2 className="absolute bottom-6 left-1.5 text-amber-50 text-[15px] font-bold">
+                Hawi
+              </h2>
+              <h2 className="absolute bottom-1 left-1.5 text-amber-50 text-[13px]">
+                Founder Instructor
+              </h2>
+            </SwiperSlide>
+          ))}
         </Swiper>
       </div>
 
@@ -135,3 +53,38 @@ function GallerySection() {
 }
 
 export default GallerySection;
+
+export const images = [
+  {
+    img: "images/img (1).jpg",
+    height: 400,
+    alt: "concert photo people dancing",
+  },
+  {
+    img: "images/img (64).jpg",
+    height: 400,
+    alt: "concert photo people dancing",
+  },
+  {
+    img: "images/img (9).jpg",
+    height: 400,
+    alt: "concert photo people dancing",
+  },
+  {
+    id: "2",
+    img: "images/img (10).jpg",
+    height: 250,
+    alt: "concert photo people dancing",
+  },
+  {
+    img: "images/img (11).jpg",
+    height: 400,
+    alt: "concert photo people dancing",
+  },
+  {
+    id: "2",
+    img: "images/img (12).jpg",
+    height: 250,
+    alt: "concert photo people dancing",
+  },
+];

@@ -1,12 +1,14 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
+
 import { Play } from "lucide-react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { FreeMode } from "swiper/modules";
-
 import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
+
 import { SplitText } from "gsap/all";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
@@ -48,9 +50,9 @@ const Hero = () => {
           Ignite your passion for dance and experience the transformative power
           of movement at our thriving academy.
         </p>
-        <button className="btn btn-neutral w-max">
+        <Link href={"#videoSection"} className="btn btn-neutral w-max">
           Watch video <Play />
-        </button>
+        </Link>
         <div className="max-w-[650px]">
           <SliderInstructor />
         </div>
@@ -72,151 +74,54 @@ export const SliderInstructor = () => {
         modules={[FreeMode]}
         className="mySwiper"
       >
-        <SwiperSlide className="h-[200px] my-auto ">
-          <h2 className="absolute top-0.5 left-1.5 text-amber-50 text-[12px]">
-            HIP-HOP
-          </h2>
-          <Image
-            className="rounded-[7px]"
-            src={"/instructors/hawi.jpg"}
-            alt="hawi dancing, hawi is the founder of hahu dance and expert in his feild"
-            width={200}
-            height={200}
-          />
-          <h2 className="absolute bottom-6 left-1.5 text-amber-50  text-[15px] font-bold">
-            Hawi
-          </h2>
-          <h2 className="absolute bottom-1 left-1.5 text-amber-50 text-[13px]">
-            Founder Instructor
-          </h2>
-        </SwiperSlide>
-        <SwiperSlide className="shadow-xl h-[200px]">
-          <h2 className="absolute top-0.5 left-1.5 text-amber-50 text-[12px]">
-            HIP-HOP
-          </h2>
-          <Image
-            className="rounded-[7px]"
-            src={"/banner.jpg"}
-            alt="hawi dancing, hawi is the founder of hahu dance and expert in his feild"
-            width={150}
-            height={200}
-          />
-          <h2 className="absolute bottom-6 left-1.5 text-amber-50 text-[15px] font-bold">
-            Hawi
-          </h2>
-          <h2 className="absolute bottom-1 left-1.5 text-amber-50 text-[13px]">
-            Founder Instructor
-          </h2>
-        </SwiperSlide>
-        <SwiperSlide className="h-[200px] my-auto">
-          <h2 className="absolute top-0.5 left-1.5 text-amber-50 text-[12px]">
-            HIP-HOP
-          </h2>
-          <Image
-            className="rounded-[7px]"
-            src={"/instructors/hawi.jpg"}
-            alt="hawi dancing, hawi is the founder of hahu dance and expert in his feild"
-            width={200}
-            height={200}
-          />
-          <h2 className="absolute bottom-6 left-1.5 text-amber-50 text-[15px] font-bold">
-            Hawi
-          </h2>
-          <h2 className="absolute bottom-1 left-1.5 text-amber-50 text-[13px]">
-            Founder Instructor
-          </h2>
-        </SwiperSlide>{" "}
-        <SwiperSlide className="h-[200px] my-auto">
-          <h2 className="absolute top-0.5 left-1.5 text-amber-50 text-[12px]">
-            HIP-HOP
-          </h2>
-          <Image
-            className="rounded-[7px]"
-            src={"/instructors/hawi.jpg"}
-            alt="hawi dancing, hawi is the founder of hahu dance and expert in his feild"
-            width={200}
-            height={200}
-          />
-          <h2 className="absolute bottom-6 left-1.5 text-amber-50 text-[15px] font-bold">
-            Hawi
-          </h2>
-          <h2 className="absolute bottom-1 left-1.5 text-amber-50 text-[13px]">
-            Founder Instructor
-          </h2>
-        </SwiperSlide>
-        <SwiperSlide className="h-[200px] my-auto">
-          <h2 className="absolute top-0.5 left-1.5 text-amber-50 text-[12px]">
-            HIP-HOP
-          </h2>
-          <Image
-            className="rounded-[7px]"
-            src={"/instructors/hawi.jpg"}
-            alt="hawi dancing, hawi is the founder of hahu dance and expert in his feild"
-            width={200}
-            height={200}
-          />
-          <h2 className="absolute bottom-6 left-1.5 text-amber-50 text-[15px] font-bold">
-            Hawi
-          </h2>
-          <h2 className="absolute bottom-1 left-1.5 text-amber-50 text-[13px]">
-            Founder Instructor
-          </h2>
-        </SwiperSlide>
-        <SwiperSlide className="h-[200px] my-auto">
-          <h2 className="absolute top-0.5 left-1.5 text-amber-50 text-[12px]">
-            HIP-HOP
-          </h2>
-          <Image
-            className="rounded-[7px]"
-            src={"/instructors/hawi.jpg"}
-            alt="hawi dancing, hawi is the founder of hahu dance and expert in his feild"
-            width={200}
-            height={200}
-          />
-          <h2 className="absolute bottom-6 left-1.5 text-amber-50 text-[15px] font-bold">
-            Hawi
-          </h2>
-          <h2 className="absolute bottom-1 left-1.5 text-amber-50 text-[13px]">
-            Founder Instructor
-          </h2>
-        </SwiperSlide>
-        <SwiperSlide className="h-[200px] my-auto">
-          <h2 className="absolute top-0.5 left-1.5 text-amber-50 text-[12px]">
-            HIP-HOP
-          </h2>
-          <Image
-            className="rounded-[7px]"
-            src={"/instructors/hawi.jpg"}
-            alt="hawi dancing, hawi is the founder of hahu dance and expert in his feild"
-            width={200}
-            height={200}
-          />
-          <h2 className="absolute bottom-6 left-1.5 text-amber-50 text-[15px] font-bold">
-            Hawi
-          </h2>
-          <h2 className="absolute bottom-1 left-1.5 text-amber-50 text-[13px]">
-            Founder Instructor
-          </h2>
-        </SwiperSlide>
-        <SwiperSlide className="h-[200px] my-auto">
-          <h2 className="absolute top-0.5 left-1.5 text-amber-50 text-[12px]">
-            HIP-HOP
-          </h2>
-          <Image
-            className="rounded-[7px]"
-            src={"/instructors/hawi.jpg"}
-            alt="hawi dancing, hawi is the founder of hahu dance and expert in his feild"
-            width={200}
-            height={200}
-          />
-          <h2 className="absolute bottom-6 left-1.5 text-amber-50 text-[15px] font-bold">
-            Hawi
-          </h2>
-          <h2 className="absolute bottom-1 left-1.5 text-amber-50 text-[13px]">
-            Founder Instructor
-          </h2>
-        </SwiperSlide>
+        {images.map(({ img, alt }, index) => (
+          <SwiperSlide key={index} className="shadow-xl h-[200px]">
+            <h2 className="absolute top-0.5 left-1.5 text-amber-50 text-[12px]">
+              HIP-HOP
+            </h2>
+            <Image
+              className="rounded-[7px]"
+              src={`/${img}`}
+              alt={alt}
+              width={200}
+              height={300}
+            />
+            <h2 className="absolute bottom-6 left-1.5 text-amber-50 text-[15px] font-bold">
+              Hawi
+            </h2>
+            <h2 className="absolute bottom-1 left-1.5 text-amber-50 text-[13px]">
+              Founder Instructor
+            </h2>
+          </SwiperSlide>
+        ))}
       </Swiper>
     </div>
   );
 };
+
+export const images = [
+  {
+    img: "images/hip-pop.jpg",
+    alt: "concert photo people dancing",
+  },
+  {
+    img: "images/img (64).jpg",
+    alt: "concert photo people dancing",
+  },
+  {
+    img: "images/img (9).jpg",
+    alt: "concert photo people dancing",
+  },
+  {
+    img: "images/img (10).jpg",
+    alt: "concert photo people dancing",
+  },
+  {
+    img: "images/img (11).jpg",
+    alt: "concert photo people dancing",
+  },
+  {
+    img: "images/img (12).jpg",
+    alt: "concert photo people dancing",
+  },
+];

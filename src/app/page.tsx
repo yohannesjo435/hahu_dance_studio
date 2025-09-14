@@ -3,8 +3,6 @@ import GallerySection from "@/components/GallerySection";
 import AboutSection from "@/components/AboutSection";
 import Company from "@/components/Company";
 import Faq from "@/components/Faq";
-import { ArrowUp } from "lucide-react";
-import Link from "next/link";
 import Drawer from "@/components/Drawer";
 import gsap from "gsap";
 import { SplitText } from "gsap/all";
@@ -33,7 +31,10 @@ const page = () => {
         </div>
         <GallerySection />
 
-        <div className="aspect-video w-full max-w-3xl mx-auto my-30">
+        <section
+          id="videoSection"
+          className="aspect-video w-full max-w-3xl mx-auto my-30"
+        >
           <iframe
             className="w-full h-full border-none"
             width="560"
@@ -45,14 +46,8 @@ const page = () => {
             referrerPolicy="strict-origin-when-cross-origin"
             allowFullScreen
           />
-        </div>
+        </section>
         <Faq />
-      </div>
-
-      <div className="fab">
-        <Link href="#main" className="btn btn-lg btn-circle ">
-          <ArrowUp />
-        </Link>
       </div>
     </div>
   );
