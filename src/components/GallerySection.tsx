@@ -57,34 +57,32 @@ export default GallerySection;
 
 export const images = [
   {
-    img: "images/img (1).jpg",
+    img: "images/img1.jpg",
     height: 400,
     alt: "concert photo people dancing",
   },
   {
-    img: "images/img (64).jpg",
+    img: "images/img64.jpg",
     height: 400,
     alt: "concert photo people dancing",
   },
   {
-    img: "images/img (9).jpg",
+    img: "images/img9.jpg",
     height: 400,
     alt: "concert photo people dancing",
   },
   {
-    id: "2",
-    img: "images/img (10).jpg",
+    img: "images/img10.jpg",
     height: 250,
     alt: "concert photo people dancing",
   },
   {
-    img: "images/img (11).jpg",
+    img: "images/img11.jpg",
     height: 400,
     alt: "concert photo people dancing",
   },
   {
-    id: "2",
-    img: "images/img (12).jpg",
+    img: "images/img12.jpg",
     height: 250,
     alt: "concert photo people dancing",
   },

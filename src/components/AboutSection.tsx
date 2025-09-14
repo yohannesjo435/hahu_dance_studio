@@ -43,7 +43,7 @@ const AboutSection = () => {
     >
       <div className="relative flex-1 w-full">
         <Image
-          src={"/images/img (54).jpg"}
+          src={"/images/img54.jpg"}
           alt="hawi dancing, hawi is the founder of hahu dance and expert in his field"
           fill
           loading="lazy"
