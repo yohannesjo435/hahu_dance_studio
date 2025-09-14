@@ -46,11 +46,12 @@ const AboutSection = () => {
           src={"/images/img (54).jpg"}
           alt="hawi dancing, hawi is the founder of hahu dance and expert in his field"
           fill
+          loading="lazy"
           className="rounded-4xl object-cover object-center"
         />
       </div>
 
-      <div className="split flex-1 text-[18px] h-max m-auto leading-8 [word-spacing:5px]">
+      <div className="split flex-1 text-[18px] w-[90%] h-max m-auto leading-8 [word-spacing:5px]">
         Hahu Dance Studio is a vibrant cultural hub in Addis Ababa, known for
         celebrating Ethiopia’s rich diversity through movement and music.
         Founded by the acclaimed Hahu Dance Crew—winners of Ethiopian Idol in

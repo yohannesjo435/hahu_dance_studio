@@ -27,6 +27,7 @@ function GallerySection() {
                 src={`/${img}`}
                 alt={alt}
                 fill
+                loading="lazy"
                 style={{
                   objectFit: "cover",
                   objectPosition: "center",

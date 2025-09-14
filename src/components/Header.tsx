@@ -81,7 +81,7 @@ const Header = () => {
     <header className="max-w-[1500px] px-[2%] lg:px-[5%] m-auto min-h-16 h-[10vh] flex justify-between items-center">
       <Link href={"/"}>
         <Image
-          className=""
+          loading="lazy"
           src="/hahu_logo.png"
           alt="hahu logo"
           width={50}

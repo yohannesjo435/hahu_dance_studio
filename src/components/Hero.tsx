@@ -12,52 +12,70 @@ import "swiper/css/pagination";
 import { SplitText } from "gsap/all";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
+import { useEffect, useState } from "react";
+import Loading from "@/app/loading";
 
 const Hero = () => {
-  useGSAP(() => {
-    const splitText = SplitText.create(".titles h1", {
-      type: "lines",
-    });
-    const splitTextPara = SplitText.create(".titles p", {
-      type: "lines",
-    });
-    gsap.from(splitText.lines, {
-      yPercent: 100,
-      opacity: 0,
-      duration: 1,
-      stagger: 0.1,
-      ease: "power1.inOut",
-    });
+  const [isLoading, setIsLoading] = useState(true);
 
-    gsap.from(splitTextPara.lines, {
-      opacity: 0,
-      stagger: 0.1,
-      duration: 2,
-      yPercent: 100,
-      ease: "power1.inOut",
-    });
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 3000);
+    return () => clearTimeout(timer);
   }, []);
 
-  return (
-    <main className="flex md:max-h-[1000px] flex-col items-center gap-[50px] md:gap-[5%] md:flex-row lg:justify-around mt-7">
-      <div className="flex-1 w-full min-h-[500px] max-h-[1000px] md:h-[85vh] bg-[url('/banner-2.jpg')] bg-cover bg-no-repeat bg-bottom"></div>
+  useGSAP(() => {
+    if (!isLoading) {
+      const splitText = SplitText.create(".titles h1", {
+        type: "lines",
+      });
+      const splitTextPara = SplitText.create(".titles p", {
+        type: "lines",
+      });
+      gsap.from(splitText.lines, {
+        yPercent: 100,
+        opacity: 0,
+        duration: 1,
+        stagger: 0.1,
+        ease: "power1.inOut",
+      });
 
-      <div className="titles h-max flex-1 w-full flex flex-col gap-4">
-        <h1 className=" text-3xl md:text-7xl overflow-hidden">
-          Hahu Dance. Dance with Passion
-        </h1>
-        <p>
-          Ignite your passion for dance and experience the transformative power
-          of movement at our thriving academy.
-        </p>
-        <Link href={"#videoSection"} className="btn btn-neutral w-max">
-          Watch video <Play />
-        </Link>
-        <div className="max-w-[650px]">
-          <SliderInstructor />
-        </div>
-      </div>
-    </main>
+      gsap.from(splitTextPara.lines, {
+        opacity: 0,
+        stagger: 0.1,
+        duration: 2,
+        yPercent: 100,
+        ease: "power1.inOut",
+      });
+    }
+  }, [isLoading]);
+
+  return (
+    <>
+      <Loading />
+      {!isLoading && (
+        <main className="flex md:max-h-[1000px] flex-col items-center gap-[50px] md:gap-[5%] md:flex-row lg:justify-around mt-7">
+          <div className="flex-1 w-full min-h-[500px] max-h-[1000px] md:h-[85vh] bg-[url('/images/banner-2.jpg')] bg-cover bg-no-repeat bg-bottom"></div>
+
+          <div className="titles h-max flex-1 w-full flex flex-col gap-4">
+            <h1 className=" text-3xl md:text-7xl overflow-hidden">
+              Hahu Dance. Dance with Passion
+            </h1>
+            <p>
+              Ignite your passion for dance and experience the transformative
+              power of movement at our thriving academy.
+            </p>
+            <Link href={"#videoSection"} className="btn btn-neutral w-max">
+              Watch video <Play />
+            </Link>
+            <div className="max-w-[650px]">
+              <SliderInstructor />
+            </div>
+          </div>
+        </main>
+      )}
+    </>
   );
 };
 
@@ -85,6 +103,7 @@ export const SliderInstructor = () => {
               alt={alt}
               width={200}
               height={300}
+              loading="lazy"
             />
             <h2 className="absolute bottom-6 left-1.5 text-amber-50 text-[15px] font-bold">
               Hawi

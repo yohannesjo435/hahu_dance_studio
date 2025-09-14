@@ -450,48 +450,48 @@ export const images = [
     height: 400,
     alt: "concert photo people dancing",
   },
-  // {
-  //   img: "images/img (83).jpg",
-  //   height: 400,
-  //   alt: "concert photo people dancing",
-  // },
-  // {
-  //   id: "2",
-  //   img: "images/img (84).jpg",
-  //   height: 250,
-  //   alt: "concert photo people dancing",
-  // },
-  // {
-  //   img: "images/img (85).jpg",
-  //   height: 400,
-  //   alt: "concert photo people dancing",
-  // },
-  // {
-  //   id: "2",
-  //   img: "images/img (86).jpg",
-  //   height: 250,
-  //   alt: "concert photo people dancing",
-  // },
-  // {
-  //   img: "images/img (87).jpg",
-  //   height: 400,
-  //   alt: "concert photo people dancing",
-  // },
-  // {
-  //   id: "2",
-  //   img: "images/img (88).jpg",
-  //   height: 250,
-  //   alt: "concert photo people dancing",
-  // },
-  // {
-  //   img: "images/img (89).jpg",
-  //   height: 400,
-  //   alt: "concert photo people dancing",
-  // },
-  // {
-  //   id: "2",
-  //   img: "images/img (90).jpg",
-  //   height: 250,
-  //   alt: "concert photo people dancing",
-  // },
+  {
+    img: "images/img (83).jpg",
+    height: 400,
+    alt: "concert photo people dancing",
+  },
+  {
+    id: "2",
+    img: "images/img (84).jpg",
+    height: 250,
+    alt: "concert photo people dancing",
+  },
+  {
+    img: "images/img (85).jpg",
+    height: 400,
+    alt: "concert photo people dancing",
+  },
+  {
+    id: "2",
+    img: "images/img (86).jpg",
+    height: 250,
+    alt: "concert photo people dancing",
+  },
+  {
+    img: "images/img (87).jpg",
+    height: 400,
+    alt: "concert photo people dancing",
+  },
+  {
+    id: "2",
+    img: "images/img (88).jpg",
+    height: 250,
+    alt: "concert photo people dancing",
+  },
+  {
+    img: "images/img (89).jpg",
+    height: 400,
+    alt: "concert photo people dancing",
+  },
+  {
+    id: "2",
+    img: "images/img (90).jpg",
+    height: 250,
+    alt: "concert photo people dancing",
+  },
 ];

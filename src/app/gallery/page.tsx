@@ -7,7 +7,13 @@ function page() {
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
         {images.map(({ img, alt }, index) => (
           <div key={index}>
-            <Image src={`/${img}`} alt={alt} width={800} height={320} />
+            <Image
+              src={`/${img}`}
+              alt={alt}
+              width={800}
+              height={320}
+              loading="lazy"
+            />
           </div>
         ))}
       </div>
