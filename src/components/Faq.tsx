@@ -24,24 +24,24 @@ export default Faq;
 
 const accordion = [
   {
-    title: "What if I’ve never danced before?",
-    text: "No worries at all! Our classes are designed for all levels, including complete beginners. Our instructors will guide you step-by-step, and you’ll be surprised how quickly you gain confidence and rhythm",
+    title: "Who are you?",
+    text: "We’re a contemporary Ethiopian dance group blending traditional styles with modern choreography to celebrate culture and community.",
     open: true,
   },
   {
-    title: "What styles of dance do you teach?",
-    text: "We offer a wide range: ballroom (Waltz, Tango, Foxtrot), Latin (Cha Cha, Salsa, Rumba), swing, hip hop, contemporary, and more. Whether you're looking for social dancing or competitive training, we’ve got you covered.",
+    title: "Where are you based?",
+    text: "Addis Ababa, Ethiopia — available for local and international bookings.",
   },
   {
-    title: " Scheduling & Enrollmen",
-    text: "No worries at all! Our classes are designed for all levels, including complete beginners. Our instructors will guide you step-by-step, and you’ll be surprised how quickly you gain confidence and rhythm",
+    title: " What events do you perform at?",
+    text: "Festivals, corporate events, workshops, private celebrations, and cultural showcases.",
   },
   {
-    title: "Do you offer classes for children?",
-    text: "Yes, we have observation windows and designated viewing days. We also host seasonal showcases so families can see their dancers shine on stage.",
+    title: "Do you travel internationally?",
+    text: "Yes, We’re based in Addis Ababa but available for global bookings with advance notice.",
   },
   {
-    title: "What if I’ve never danced before?",
-    text: "No worries at all! Our classes are designed for all levels, including complete beginners. Our instructors will guide you step-by-step, and you’ll be surprised how quickly you gain confidence and rhythm",
+    title: "How can I book you?",
+    text: "Email: hahudance@gmail.com Phone: +251-913581869",
   },
 ];

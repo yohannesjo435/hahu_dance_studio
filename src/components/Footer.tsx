@@ -10,7 +10,7 @@ const Footer = () => {
           <li>Addis Ababa Ethiopia</li>
           <li>AA</li>
           <li>hahu@gmail.com</li>
-          <li>+2519 0111111</li>
+          <li>+251-913581869</li>
         </ul>
       </div>
 
@@ -34,7 +34,7 @@ const Footer = () => {
             <li>Addis Ababa Ethiopia</li>
             <li>AA</li>
             <li>hahu@gmail.com</li>
-            <li>+2519 0111111</li>
+            <li>+251-913581869</li>
           </ul>
         </div>
 

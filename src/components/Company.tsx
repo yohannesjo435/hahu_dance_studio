@@ -35,4 +35,17 @@ const images = [
     src: "/company/ethio-airlines.png",
     alt: "image",
   },
+  {
+    src: "/company/aau-logo.png",
+    alt: "image",
+  },
+  {
+    src: "/company/ebs.png",
+    alt: "image",
+  },
+
+  {
+    src: "/company/ethio-airlines.png",
+    alt: "image",
+  },
 ];

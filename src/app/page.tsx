@@ -39,7 +39,7 @@ const page = () => {
             className="w-full h-full border-none"
             width="560"
             height="315"
-            src="https://www.youtube.com/embed/sRj5pxG2JPk?si=idPeu16Hi-nkfOiS"
+            src="https://www.youtube.com/embed/ESZztdpwwY0?si=3hCgv1dYX_rXTr4c"
             title="YouTube video player"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"

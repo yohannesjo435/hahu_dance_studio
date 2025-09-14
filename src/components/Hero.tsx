@@ -63,8 +63,8 @@ const Hero = () => {
               Hahu Dance. Body speak art Talk
             </h1>
             <p>
-              Ignite your passion for dance and experience the transformative
-              power of movement with our thriving dancers.
+              Our bodies speak what words cannot. Through dance, art begins to
+              talk bold, rhythmic, and alive.
             </p>
             <Link href={"#videoSection"} className="btn btn-neutral w-max">
               Watch video <Play />

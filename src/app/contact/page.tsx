@@ -49,7 +49,7 @@ const page = () => {
           </ul>
           <p>We typically respond within 12 hours.</p>
         </div>
-        <div className="flex flex-1 flex-col max-w-[700px] m-auto">
+        <div className="flex flex-1 flex-col max-w-[700px] text-black m-auto">
           <h1 className="text-left text-2xl  mb-10">Send Us a Message</h1>
           <form className="flex flex-col gap-5 bg-[#fcf7f1] rounded-3xl w-full py-16 px-14">
             <div className="flex gap-12">

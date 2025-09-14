@@ -39,11 +39,11 @@ const Drawer = () => {
             <ul className="flex flex-col gap-5">
               <div>
                 <label>Phone</label>
-                <li>+251011111</li>
+                <li>+251-913581869</li>
               </div>
               <div>
                 <label>Email</label>
-                <li>+251011111</li>
+                <li>hahudance@gmail.com</li>
               </div>
             </ul>
           </ul>

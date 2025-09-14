@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   title: "Hahu Dance Studio",
   description: "We are Hahu dance studio company based in ethiopia addis ababa",
   icons: {
-    icon: "images/favicon.ico",
+    icon: "favicon.ico",
   },
 };
 
