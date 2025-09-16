@@ -43,9 +43,4 @@ const images = [
     src: "/company/ebs.png",
     alt: "image",
   },
-
-  {
-    src: "/company/ethio-airlines.png",
-    alt: "image",
-  },
 ];
