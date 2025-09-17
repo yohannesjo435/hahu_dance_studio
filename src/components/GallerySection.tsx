@@ -57,7 +57,7 @@ export default GallerySection;
 
 export const images = [
   {
-    img: "images/img1.jpg",
+    img: "images/img15.jpg",
     height: 400,
     alt: "concert photo people dancing",
   },
